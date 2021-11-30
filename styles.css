@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@500;700&family=Lexend+Deca:wght@400;700&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@500;700&family=Lexend+Deca:wght@700&display=swap');
+
+*,
+*::after,
+*::before{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+--Bright-orange: hsl(31, 77%, 52%);
+--Dark-cyan: hsl(184, 100%, 22%);
+--Very-dark-cyan: hsl(179, 100%, 13%);
+--Transparent-white: hsla(0, 0%, 100%, 0.75);
+--Very-light-gray: hsl(0, 0%, 95%);
+}
+
+
+.sedans {
+    background-color: var(--Bright-orange);
+    padding: 3rem;
+    position: relative;
+    height: 30rem;
+}
+
+.sedans h1, .suvs h1, .lux h1 {
+    color: var(--Very-light-gray);
+    font-weight: 700;
+    padding: 1rem 0;
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 3rem;
+}
+
+.sedans p, .suvs p, .lux p {
+    color: var(--Transparent-white);
+    font-weight: 400;
+    font-size: 15px;
+    padding: 1rem 0;
+    line-height: 2;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+.sedans button{
+    color: var(--Bright-orange);
+    font-weight: 400;
+    padding: 1rem 0;
+    border-width: 0;
+    border-radius: 30px;
+    width: 9rem;
+    height: 3rem;
+    cursor: pointer;
+} 
+
+.suvs button{
+    color: var(--Dark-cyan);
+    font-weight: 400;
+    padding: 1rem 0;
+    border-width: 0;
+    border-radius: 30px;
+    width: 9rem;
+    height: 3rem;
+    cursor: pointer;
+}
+.lux button {
+    color: var(--Very-dark-cyan);
+    font-weight: 400;
+    padding: 1rem 0;
+    border-width: 0;
+    border-radius: 30px;
+    width: 9rem;
+    height: 3rem;
+    cursor: pointer;
+}
+
+.suvs{
+    background-color: var(--Dark-cyan);
+    padding: 3rem;
+    position: relative;
+    height: 30rem;
+}
+
+.lux{
+    background-color: var(--Very-dark-cyan);
+    padding: 3rem;
+    position: relative;
+    height: 30rem;
+}
+
+@media screen and (min-width: 1000px) {
+
+    .main-grid{
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        
+    }
+
+    .main{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        width: 80%;
+        justify-content: center;
+        align-content: center;
+        height: 100vh;
+        align-self: center;
+    }
+
+    .sedans button, .suvs button, .lux button {
+        position:absolute;
+        bottom: 1rem;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+
+    .main-grid{
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        
+    }
+
+    .main{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        width: 80%;
+        justify-content: center;
+        align-content: center;
+        height: 100vh;
+        align-self: center;
+    }
+
+    .sedans button, .suvs button, .lux button {
+        position:absolute;
+        bottom: 1rem;
+    }
+}
+
