@@ -97,6 +97,14 @@
         justify-content: center;
         
     }
+    
+    .sedans{
+        border-radius: 10px 0 0 10px;
+    }
+
+    .lux{
+        border-radius: 0 10px 10px 0;
+    }
 
     .main{
         display: grid;
@@ -121,6 +129,14 @@
         align-content: center;
         justify-content: center;
         
+    }
+    
+    .sedans{
+        border-radius: 10px 0 0 10px;
+    }
+
+    .lux{
+        border-radius: 0 10px 10px 0;
     }
 
     .main{
